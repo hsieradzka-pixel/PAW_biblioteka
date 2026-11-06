@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteka</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -97,7 +98,8 @@
         </button>
     </form>
 </section>
-            <article>
+<div class="book-list">
+            <article class="book-card">
                 <h3>Solaris</h3>
 
                 <div class="book-info">
@@ -116,7 +118,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="book-card">
                 <h3>Lalka</h3>
 
                 <p>
@@ -129,7 +131,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="book-card">
                 <h3>Hobbit</h3>
 
                 <p>
@@ -139,7 +141,7 @@
                 <p>
                     Historia wyprawy Bilba Bagginsa, który opuszcza
                     spokojny dom i wyrusza w niebezpieczną podróż.
-                </p><article>
+                </p><article class="book-card">
 
 
         <h3>Mały Książę</h3>
@@ -194,5 +196,69 @@
         </p>
     </footer>
 
+    <section>
+    <h2>Test Flexbox</h2>
+
+    <div class="flex-test">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</section>
+
 </body>
 </html>venv C:\Users\hsieradz\paw_biblioteka\.venv
+.flex-test {
+    display: flex;
+    gap: 20px;
+}
+.flex-test {
+    display: row;
+    flex-direction: center;
+}
+.flex-test {
+    display: flex;
+
+    justify-content: center;
+}
+.flex-test {
+    display: flex;
+
+    justify-content: space-between;
+}
+.flex-test {
+    display: flex;
+
+    align-items: center;
+}
+header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #1f3c5c;
+    color: white;
+
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
